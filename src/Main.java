@@ -8,7 +8,7 @@ class Main {
     povoarDicionario(d);
 ;
     
-   System.out.println(d.buscaSignificado("Gato"));
+   System.out.println(d.buscaSignificado("Jacare"));
   }
   
   public static void povoarDicionario(Dicionario d) {

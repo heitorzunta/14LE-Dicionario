@@ -22,17 +22,17 @@ public class Dicionario {
   public String buscaSignificado(String palavra) {
     String significado = new String("Termo não encontrado!");
     
-    int start=0, end=quantidadeTermos;
-    int mid = (start+end)/2;
+    int start=0, end=quantidadeTermos-1;
+    int mid;
     
     while (start <= end) {
-    	if(termos[mid].getPalavra().compareTo(palavra) > 0) start = mid+1;
-    	if(termos[mid].getPalavra().compareTo(palavra) < 0) end = mid-1;
-    	else significado = termos[mid].getSignificado();
+        mid = (start+end)/2;
+        if(palavra.compareTo(termos[mid].getPalavra()) == 0) return significado = termos[mid].getSignificado();
+    	if(palavra.compareTo(termos[mid].getPalavra()) < 0) end = mid-1;
+    	if(palavra.compareTo(termos[mid].getPalavra()) > 0) start = mid+1;
 
-    	mid = (start+end)/2;
     }
-    return significado;
+     return significado;
   }
   
   
