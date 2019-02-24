@@ -28,8 +28,8 @@ public class Dicionario {
     while (start <= end) {
         mid = (start+end)/2;
         if(palavra.compareTo(termos[mid].getPalavra()) == 0) return significado = termos[mid].getSignificado();
-    	if(palavra.compareTo(termos[mid].getPalavra()) < 0) end = mid-1;
-    	if(palavra.compareTo(termos[mid].getPalavra()) > 0) start = mid+1;
+    	else if(palavra.compareTo(termos[mid].getPalavra()) < 0) end = mid-1;
+    	else start = mid+1;
 
     }
      return significado;

@@ -1,14 +1,25 @@
+import java.util.Scanner;
+
 class Main {
   
   public static void main(String[] args) {
-    
+
+    int n; //quantidade de pesquisas realizadas
+    String pesquisa; // termo a ser pesquisado
+
     Dicionario d = new Dicionario();
-    
-    
+
     povoarDicionario(d);
-;
-    
-   System.out.println(d.buscaSignificado("Jacare"));
+
+      Scanner sc = new Scanner(System.in);
+
+      n  = sc.nextInt();
+
+    for(int i=0; i<n; i++){
+        pesquisa = sc.next();
+        System.out.println(d.buscaSignificado(pesquisa));
+    }
+
   }
   
   public static void povoarDicionario(Dicionario d) {
