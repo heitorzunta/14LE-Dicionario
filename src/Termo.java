@@ -1,11 +1,15 @@
+/* Classe Termo 
+ *  alterada dia 23/02/19
+ */
+
 public class Termo {
   
   private String palavra;
   private String significado;
   
-  Termo (String palavra, String significado) {
-    this.palavra = new String();
-    this.significado = new String();
+  public Termo (String palavra, String significado) {
+	  this.palavra = palavra;
+	  this.significado = significado;
   }
 
 public String getPalavra() {
@@ -23,5 +27,5 @@ public String getSignificado() {
 public void setSignificado(String significado) {
 	this.significado = significado;
 }
-
+  
 }

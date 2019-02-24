@@ -4,10 +4,11 @@ class Main {
     
     Dicionario d = new Dicionario();
     
-    povoarDicionario(d);
-   d.buscaTermo("Baleia");
     
-  //  System.out.println("Hello world!");
+    povoarDicionario(d);
+;
+    
+   System.out.println(d.buscaSignificado("Gato"));
   }
   
   public static void povoarDicionario(Dicionario d) {
@@ -22,5 +23,4 @@ class Main {
     d.adicionaTermo("Iguana", "Iguana é um gênero de réptil da família Iguanidae. As espécies deste gênero ocorrem em regiões tropicais da América Central, América do Sul e Caribe.");
     d.adicionaTermo("Jacare", "Jacaré é uma denominação comum às espécies de crocodilianos da família Alligatoridae, sendo muito parecidos com os crocodilos, dos quais se distinguem pela cabeça mais curta e larga e pela presença de membranas interdigitais");
   }
-   
 }
